@@ -141,3 +141,12 @@ getUsers() { return [{ id: 1, name: 'Nik' }] }
 8:45 импортируем
 import { AppService } from "./app.service";
 
+08:50 - Dependency Injection. Внедрение зависимостей.
+08:55 в контроллере в constructor указываем сервисы
+constructor(private appService: AppService) { }
+
+9:00 импортируем 
+import { AppService } from './app.service';
+
+9:05 не создаем объект, а просто пользуемся
+return this.appService.getUsers()
