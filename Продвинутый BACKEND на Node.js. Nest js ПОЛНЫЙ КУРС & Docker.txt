@@ -86,3 +86,29 @@ import { AppModule } from "./app.module"
 
 5:20 запускаем приложение в режиме разработки
 npm run start:dev
+
+5:40 - Контроллеры, провайдеры (сервисы), @Module, @Controller, @Injectable.
+
+5:40 создаем в папке src файл-Контроллер
+app.controller.ts
+
+5:55 создадим и экспортируем class
+export class AppController {}
+
+6:00 помечаем декоратором c префиксом адреса
+@Controller('/api')
+
+6:10 импортируем 
+import { Controller } from "@nestjs/common";
+
+6:20 внутри класса создадим функцию 
+getUsers() {
+// которая возвращает массив объектов
+return [{id:1, name: 'Nik}]
+}
+
+6:40 саму функцию помечаем декоратором по типу запроса
+  в параметрах указываем путь до эндпоинта
+@get('/users')
+
+
