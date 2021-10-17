@@ -111,4 +111,9 @@ return [{id:1, name: 'Nik}]
   в параметрах указываем путь до эндпоинта
 @get('/users')
 
+6:50 регистрация контроллера в модуле
+controllers:[AppController]
+
+6:55 импортируем
+import { AppController } from "./app.controller";
 
