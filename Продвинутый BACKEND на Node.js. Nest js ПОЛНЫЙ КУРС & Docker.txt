@@ -117,3 +117,27 @@ controllers:[AppController]
 6:55 импортируем
 import { AppController } from "./app.controller";
 
+7:25 провайдеры
+providers:[]
+
+7:40 создаем в папке src файл-внешней логики
+app.service.ts
+
+7:50 создаем и экспортируем класс
+export class AppService{}
+
+7:55 помечаем аннотацией декорируем
+@Injectable()
+
+8:00 импортируем
+import { Injectable } from "@nestjs/common";
+
+8:05 в классе создаем функцию возвращающую пользователей
+getUsers() { return [{ id: 1, name: 'Nik' }] }
+
+8:40 регистрируем контроллер в провайдере
+  providers: [AppService]
+
+8:45 импортируем
+import { AppService } from "./app.service";
+
