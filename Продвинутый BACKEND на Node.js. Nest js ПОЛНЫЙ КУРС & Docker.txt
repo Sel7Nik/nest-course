@@ -47,3 +47,42 @@ npm i -g @nestjs/cli
 nest new project-name
 
 3:00 удаляем все ненужное
+
+3:15 создаем в папке src точку входа файл 
+main.ts
+
+3:25 в файле main.ts создаём асинхронную функцию
+async function start() {}
+
+вызываем её. Она будет запускать приложение
+start()
+
+3:35 создаем константу для определения порта получаемого из системных переменных
+const PORT = process.env.PORT || 5000
+
+3:45 создаем экземпляр приложения
+const app = await NestFactory.create()
+
+импортируем
+import { NestFactory } from "@nestjs/core"
+
+4:00 слушатель порта
+await app.listen(PORT, () => console.log(`server started on port = ${PORT}`))
+
+4:30 создание модуля для функции create 
+app.module.ts
+
+4:45 помечаем класс декоратором и передаем в него объект
+@Module({})
+
+4:55 импортируем 
+import { Module } from "@nestjs/common";
+
+5:05 в main.js в NestFactory.create() передаем модуль из app.module
+const app = await NestFactory.create(AppModule)
+
+5:10 импортируем
+import { AppModule } from "./app.module"
+
+5:20 запускаем приложение в режиме разработки
+npm run start:dev
