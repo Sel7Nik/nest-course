@@ -227,3 +227,10 @@ ConfigModule.forRoot({ envFilePath: '.env' }),
 14:15 создаем этот файл в корне проекта
 .env
 
+15:20 constant 
+PORT = 7000
+POSTGRESS_HOST = localhost
+POSTGRESS_USER = postgres
+POSTGRESS_DB = nest-course
+POSTGRESS_PASSWORD = user
+POSTGRESS_PORT = 5433
