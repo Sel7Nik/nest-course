@@ -293,3 +293,12 @@ imports: [
 22:30 создаем функции
 async createUser() { }
 async getAll() { }
+
+23:20 
+create-user.dto.ts
+
+23:40
+export class createUserDto {
+  readonly email: string
+  readonly password: string
+}
