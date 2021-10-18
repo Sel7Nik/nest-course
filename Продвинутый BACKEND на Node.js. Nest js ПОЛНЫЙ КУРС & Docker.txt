@@ -161,6 +161,10 @@ return this.appService.getUsers()
 09:30 - PostgreSQL. Sequelize. Подключаемся к базе данных.
 =======================================================
 
+https://docs.nestjs.com/techniques/database#sequelize-integration
+https://sequelize.org/master/manual/getting-started.html
+https://habr.com/ru/post/439434/
+
 10:00 скрипт установка зависимостей sequelize
 npm install --save @nestjs/sequelize sequelize sequelize-typescript
 
@@ -169,3 +173,31 @@ npm install --save pg pg-hstore
 
 10:30 установка типов для sequelize
 npm install --save-dev @types/sequelize
+
+10:40 подключение к БД PG
+imports: [
+    SequelizeModule.forRoot({
+      dialect: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: 'root',
+      database: 'nest-course',
+      models: [],
+      autoLoadModels: true
+
+    }),
+  ],
+
+  11:05 импорт
+  import { SequelizeModule } from '@nestjs/sequelize'
+
+  11:10 проверяем 
+  dialect: 'postgres', port: 5432,
+
+  11:35 добавляем
+  autoLoadModels: true
+
+
+
+
