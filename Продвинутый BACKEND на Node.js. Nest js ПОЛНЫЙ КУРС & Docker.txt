@@ -234,3 +234,6 @@ POSTGRESS_USER = postgres
 POSTGRESS_DB = nest-course
 POSTGRESS_PASSWORD = user
 POSTGRESS_PORT = 5433
+
+17:10 установка пакета cross-env
+npm i cross-env
