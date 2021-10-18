@@ -13,11 +13,11 @@ import { ConfigModule } from "@nestjs/config";
     }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
-      host: 'localhost',
-      port: 5433,
-      username: 'postgres',
-      password: 'user',
-      database: 'nest-course',
+      host: process.env.POSTGRESS_HOST,
+      port: Number(process.env.POSTGRESS_PORT),
+      username: process.env.POSTGRESS_USER,
+      password: process.env.POSTGRESS_PASSWORD,
+      database: process.env.POSTGRESS_DB,
       models: [],
       autoLoadModels: true
     }),
