@@ -10,9 +10,9 @@ import { SequelizeModule } from '@nestjs/sequelize';
     SequelizeModule.forRoot({
       dialect: 'postgres',
       host: 'localhost',
-      port: 5432,
+      port: 5433,
       username: 'postgres',
-      password: 'root',
+      password: 'user',
       database: 'nest-course',
       models: [],
       autoLoadModels: true

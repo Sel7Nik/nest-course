@@ -189,14 +189,17 @@ imports: [
     }),
   ],
 
-  11:05 импорт
-  import { SequelizeModule } from '@nestjs/sequelize'
+11:05 импорт
+import { SequelizeModule } from '@nestjs/sequelize'
 
-  11:10 проверяем 
-  dialect: 'postgres', port: 5432,
+11:10 проверяем 
+dialect: 'postgres', port: 5432,
+11:35 добавляем
+autoLoadModels: true
 
-  11:35 добавляем
-  autoLoadModels: true
+11:40 Устанавливаем и настраиваем БД Postgres
+
+11:45 Создаем новую базу данных и подключаемся
 
 
 
