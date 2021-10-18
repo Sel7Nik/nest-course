@@ -237,3 +237,6 @@ POSTGRESS_PORT = 5433
 
 17:10 установка пакета cross-env
 npm i cross-env
+
+17:45 меняем envFilePath: '.env' на 
+envFilePath: `.${process.env.NODE_ENV}.env`
