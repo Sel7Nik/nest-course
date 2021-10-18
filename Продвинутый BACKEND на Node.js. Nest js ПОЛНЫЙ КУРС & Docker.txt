@@ -240,3 +240,32 @@ npm i cross-env
 
 17:45 меняем envFilePath: '.env' на 
 envFilePath: `.${process.env.NODE_ENV}.env`
+
+18:25 .env удаляем
+
+=======================================================
+18:30 - Sequelize. Модель пользователя. @Table, @Column.
+=======================================================
+
+18:40 смема как пользователь будет сохраняться в будет
+export class User extends Model
+
+18:45 импортируем
+import { Model} from "sequelize-typescript";
+
+19:15 декорируем 
+@Table({tableName: 'users'})
+
+19:20 описываем поля
+id: number;
+email: string;
+password: string;
+banned: boolean;
+banReason: string;
+
+19:50 декорируем каждое поле
+@Column({ type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true })
+@Column({type: DataType.STRING, unique: true, allowNull: false})
+@Column({type: DataType.STRING, allowNull: false})
+@Column({type: DataType.BOOLEAN, defaultValue: false})
+@Column({type: DataType.STRING, allowNull: true})
