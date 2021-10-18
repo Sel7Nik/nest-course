@@ -302,3 +302,6 @@ export class createUserDto {
   readonly email: string
   readonly password: string
 }
+
+26:30 - Документация API. Swagger.
+npm i @nestjs/swagger swagger-ui-express
