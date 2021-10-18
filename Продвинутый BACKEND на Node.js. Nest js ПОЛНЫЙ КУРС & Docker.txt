@@ -269,3 +269,19 @@ banReason: string;
 @Column({type: DataType.STRING, allowNull: false})
 @Column({type: DataType.BOOLEAN, defaultValue: false})
 @Column({type: DataType.STRING, allowNull: true})
+
+21:15 interface UserCreationAttrs {
+email: string;
+password: string;}
+
+21:30 вторым дженериком
+export class User extends Model<User, UserCreationAttrs> 
+
+21:40 регистрируем в app.module.ts
+models: [User]
+импортируем
+
+21:50 в users.module добавляем imports
+imports: [
+    SequelizeModule.forFeature([User])
+  ]
