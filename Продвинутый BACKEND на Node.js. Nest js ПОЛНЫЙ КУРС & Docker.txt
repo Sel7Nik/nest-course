@@ -160,3 +160,12 @@ return this.appService.getUsers()
 =======================================================
 09:30 - PostgreSQL. Sequelize. Подключаемся к базе данных.
 =======================================================
+
+10:00 скрипт установка зависимостей sequelize
+npm install --save @nestjs/sequelize sequelize sequelize-typescript
+
+10:20 скрипт зависимостей # Postgres
+npm install --save pg pg-hstore 
+
+10:30 установка типов для sequelize
+npm install --save-dev @types/sequelize
