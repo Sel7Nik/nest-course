@@ -213,3 +213,17 @@ appService, AppController
 nest generate module users
 nest generate controller users
 nest generate service users
+
+=======================================================
+13:40 - Конфигурация. development.env, production.env. Переменные окружения.
+=======================================================
+
+13:45 установка пакета
+npm i @nestjs/config
+
+14:00 добавляем в импорт путь к файлу конфигурации
+ConfigModule.forRoot({ envFilePath: '.env' }),
+
+14:15 создаем этот файл в корне проекта
+.env
+
