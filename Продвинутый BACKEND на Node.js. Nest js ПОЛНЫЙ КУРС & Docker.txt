@@ -206,3 +206,10 @@ autoLoadModels: true
 =======================================================
 удаляем файлы , зависимости и импорт для 
 appService, AppController
+
+12:30 создаем папку user
+
+12:40 генерируем модуль users controller service
+nest generate module users
+nest generate controller users
+nest generate service users
