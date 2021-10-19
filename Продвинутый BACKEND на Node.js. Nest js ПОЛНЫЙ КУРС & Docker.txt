@@ -313,3 +313,5 @@ npm i @nestjs/swagger swagger-ui-express
 nest generate module roles
 nest generate controller roles
 nest generate service roles
+
+38:10 добавление и получение ролей
