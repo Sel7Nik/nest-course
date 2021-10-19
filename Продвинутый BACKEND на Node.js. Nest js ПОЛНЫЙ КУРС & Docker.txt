@@ -302,6 +302,14 @@ export class createUserDto {
   readonly email: string
   readonly password: string
 }
-
+=======================================================
 26:30 - Документация API. Swagger.
 npm i @nestjs/swagger swagger-ui-express
+=======================================================
+
+=======================================================
+32:20 - Роли пользователя.
+=======================================================
+nest generate module roles
+nest generate controller roles
+nest generate service roles
