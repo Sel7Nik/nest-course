@@ -315,3 +315,6 @@ nest generate controller roles
 nest generate service roles
 
 38:10 добавление и получение ролей
+
+
+42:05 присваивание пользователю роли
