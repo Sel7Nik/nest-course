@@ -318,3 +318,13 @@ nest generate service roles
 
 
 42:05 присваивание пользователю роли
+=======================================================
+44:50 - AuthModule. Регистрация. Авторизация. JWT Токен.
+=======================================================
+
+nest generate module auth
+nest generate controller auth
+nest generate service auth
+
+45:20  модуль  jwt и bcryptjs
+npm i @nestjs/jwt bcryptjs
